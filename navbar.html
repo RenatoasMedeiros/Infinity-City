@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navbar</title>
+</head>
+<body>
+  <div class="container">
+    <nav class="navbar navbar-expand-sm navbar-light">
+      <a class="navbar-brand" href="./dashboard.php">
+        <img src="./img/infinity.png" alt="Smart City" width="64" height="64" class="d-inline-block align-top">
+        <span class="hidden" style="display: none;">Smart City</span>
+      </a>
+      <button 
+      class="navbar-toggler" 
+      type="button" 
+      data-bs-toggle="collapse" 
+      data-bs-target="#toggleMobileMenu" 
+      aria-controls="toggleMobileMenu" 
+      aria-expanded="false" 
+      aria-label="Toggle navigation"
+      >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="toggleMobileMenu">
+      <ul class="navbar-nav ms-auto text-center">
+        <li>
+          <a class="nav-link active" aria-current="page" href="./dashboard.php">Smart City</a>
+        </li>
+        <li>
+          <a class="nav-link disabled" href="./historico.php?sensores=true">Estatística</a>
+        </li>
+        <li>
+          <a class="nav-link" href="./logout.php">Logout</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  </div>
+  <!-- Option 1: Bootstrap Bundle com Popper, para funcionamento correto da NAVBAR) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+</body>
+</html>
